@@ -1,0 +1,206 @@
+.navbar {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+    z-index: 1;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .navbar {
+    background-color: #1f1f1f;
+    background-image: none;
+    color: #ffffff;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-left img {
+    width: 90px;
+    display: block;
+}
+
+.navbar-left ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-left ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: color 0.3s;
+}
+
+.navbar-left ul li a:hover {
+    color: #ffffff;
+}
+
+body.dark-mode .navbar-left ul li a {
+    color: #ffffff;
+}
+
+body.dark-mode .navbar-left ul li a:hover {
+    color: #e5e5e5;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar-right .icons {
+    width: 20px;
+    cursor: pointer;
+}
+
+.navbar-right .profile {
+    border-radius: 4px;
+    width: 35px;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background-color: #191919;
+    border-radius: 2px;
+    padding: 18px 22px;
+    z-index: 1;
+    text-decoration: underline;
+    display: none;
+}
+
+body.dark-mode .navbar .dropdown {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.navbar .dropdown a {
+    font-size: 14px;
+}
+
+.navbar-profile:hover .dropdown {
+   display: block;
+}
+
+.nav-dark {
+    background: #141414;
+}
+
+@media (max-width: 800px) {
+    .navbar-left ul {
+        display: none;
+    }
+    .navbar {
+      padding: 20px 4%;
+    }
+    .navbar img {
+        height: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar img {
+        height: 20px;
+    }
+    .navbar-right {
+        gap: 10px;
+    }
+    .navbar-right .icons {
+        width: 18px;
+    }
+}
+
+.parnet {
+    padding: 10px 25px;
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.parnet:hover {
+    background-color: #fff;
+    color: green;
+    transform: scale(1.1);              
+}
+
+body.dark-mode .parnet {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .parnet:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode-toggle {
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: inherit;
+}
+
+.dark-mode-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  body.dark-mode .dark-mode-toggle {
+    color: white;
+  }
+
+   
+  body.dark-mode .navbar {
+    background-color: #1f1f1f;
+    background-image: none;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar-left ul li a {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar-left ul li a:hover {
+    color: #ffffff;
+  }
+  
+  body.dark-mode .navbar-profile .dropdown {
+    background-color: #2a2a2a;
+    color: #fff;
+  }
+  
