@@ -136,8 +136,8 @@ body.dark-mode .navbar .dropdown {
 
 .parnet {
     padding: 10px 25px;
-    background-color: green;
-    color: white;
+    background-color:white;
+    color: black;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
 }
